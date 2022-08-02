@@ -25,11 +25,19 @@
         </dependency>
 
         <!-- mysql 驱动依赖 这里我选用的是8.0.11 大家可以自己调整自己的版本 -->
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--            <version>8.0.11</version>-->
+<!--            <scope>runtime</scope>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.11</version>
-            <scope>runtime</scope>
+            <version>8.0.29</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/main/resources/eulerdb-connector-java-1.0.jar</systemPath>
         </dependency>
 
         <!-- mybatis 依赖 -->
